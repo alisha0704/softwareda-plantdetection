@@ -29,10 +29,10 @@ const Header = () => {
         <Link href=" / ">
           <div className="flex items-center space-x-3 px-8 py-1">
             <div>
-              <Image src="/logo.png" alt="logo" width={50} height={50} />
+              <Image src="/logo.jpeg" alt="logo" width={50} height={50} />
             </div>
             <div className="py-3 text-2xl font-medium text-black px-3">
-              SmartyPaws
+              LeafSense
             </div>
           </div>
         </Link>
@@ -41,17 +41,17 @@ const Header = () => {
           <Link href="/">
             {" "}
             {/* Wrap "Home" with Link */}
-            <h2 className="hover:text-gray-500">Home</h2>
+            <h2 className="hover:text-gray-400">Home</h2>
           </Link>
           <Link href="/#whyus">
             {" "}
             {/* Wrap "Why Us" with Link */}
-            <h2 className="hover:text-gray-500">Why Us</h2>
+            <h2 className="hover:text-gray-400">About Us</h2>
           </Link>
           <Link href="/about">
             {" "}
             {/* Wrap "About Us" with Link */}
-            <h2 className="hover:text-gray-500">About Us</h2>
+            <h2 className="hover:text-gray-400">Contact Us</h2>
           </Link>
         </div>
       </div>
