@@ -14,7 +14,7 @@ const Hero = () => {
             <p className="mb-8 text-2xl font-semibold leading-relaxed">
             Harnessing AI to Identify Species and Defend Plant Health.
             </p>
-            <Link href="/#tools">
+            <Link href="/test">
               <div className="container flex items-center justify-center">
                 <button className="inline-flex rounded-2xl border-0 bg-[#54BD95] hover:bg-green-300 px-10 py-3 text-2xl text-white focus:outline-none">
                   Get Started 
