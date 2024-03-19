@@ -9,7 +9,7 @@ export default authMiddleware({
   //  publicRoutes: ['/'],
   // Prevent the specified routes from accessing
   // authentication information:
-  // ignoredRoutes: ['/no-auth-in-this-route'],
+  ignoredRoutes: ['/'],
 });
  
 export const config = {
