@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { UserButton } from "@clerk/nextjs";
+
 
 const Header = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -54,7 +56,11 @@ const Header = () => {
             <h2 className="hover:text-gray-400">Contact Us</h2>
           </Link>
         </div>
+        {/* <header>
+        <UserButton />
+      </header> */}
       </div>
+      
     </div>
   );
 };
