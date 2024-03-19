@@ -43,12 +43,12 @@ const Header = () => {
             {/* Wrap "Home" with Link */}
             <h2 className="hover:text-gray-400">Home</h2>
           </Link>
-          <Link href="/#whyus">
+          <Link href="/AboutUs">
             {" "}
             {/* Wrap "Why Us" with Link */}
             <h2 className="hover:text-gray-400">About Us</h2>
           </Link>
-          <Link href="/about">
+          <Link href="/ContactUs">
             {" "}
             {/* Wrap "About Us" with Link */}
             <h2 className="hover:text-gray-400">Contact Us</h2>

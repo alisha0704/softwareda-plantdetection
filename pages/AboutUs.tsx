@@ -6,9 +6,9 @@ const AboutUs: React.FC = () => {
     return (
         <>
         <Header></Header>
-        <div className="bg-slate-50">
+        <div className="bg-slate-200">
         <div className="max-w-2xl mx-auto py-8 px-4">
-            <h1 className="text-3xl font-serif text-center font-bold mb-4">About Us</h1>
+            <h1 className="text-2xl font-serif text-center font-bold mb-4">About Us</h1>
 
             <p className="text-lg font-serif mb-4">Welcome to LeafSense, where cutting-edge technology meets
              a passion for plant health. At LeafSense, we're dedicated to revolutionizing the way

@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
           <div className="w-5/6 md:w-1/2 lg:w-full lg:max-w-lg">
             <Image
-              src="/landingleaf.jpeg"
+              src="/landingleaf-removebg-preview.png"
               width={800}
               height={900}
               alt=""
