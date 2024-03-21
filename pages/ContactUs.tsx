@@ -140,7 +140,7 @@ const ContactUs = () => {
                 <div className="flex-col justify-start items-start gap-14 flex">
                   <div className="w-6 h-5 relative">
                     <Image
-                      src="/Support.jpeg"
+                      src="/support.jpeg"
                       alt="GitHub"
                       width={45}
                       height={70}

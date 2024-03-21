@@ -62,9 +62,9 @@ const ImageUpload = () => {
         </div>
       )}
       <div className="py-4">
-        <Link href="/">
+        <Link href="feedback">
           <button className="px-7 py-3  text-white bg-green-500 hover:bg-green-400 rounded-xl text-lg">
-            Back to Home
+            Continue 
           </button>
         </Link>
       </div>

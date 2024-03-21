@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Common/Header";
+import Link from "next/link";
 
 const Feedback: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -90,12 +91,14 @@ const Feedback: React.FC = () => {
                   required
                 ></textarea>
               </div>
+              <Link href="/">
               <button
                 type="submit"
                 className="bg-[#54BD95] hover:bg-green-300 font-serif text-white py-2 px-7 rounded-3xl text-xl transition duration-300"
               >
                 Submit
               </button>
+              </Link>
             </form>
           </div>
           <div className="w-1/3 px-10 flex justify-center items-center">
