@@ -5,8 +5,7 @@ import Header from "./components/Common/Header";
 const AboutUs: React.FC = () => {
   return (
     <>
-      <Header></Header>
-      <div className="bg-slate-200">
+      <div className="bg-gradient-to-r from-lime-400 via-lime-300 to-lime-100 min-h-screen">
         <div className="max-w-2xl mx-auto py-8 px-4">
           <h1 className="text-2xl font-serif text-center font-bold mb-4">
             About Us

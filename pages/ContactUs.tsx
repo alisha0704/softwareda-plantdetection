@@ -17,10 +17,9 @@ const ContactUs = () => {
   };
   return (
     <>
-      <Header></Header>
       <div
         id="contact"
-        className="bg-slate-200 py-6 h-full max-md:px-5 lg:px-[250px] px-[50px] md:px-[100px]"
+        className="bg-gradient-to-r from-lime-400 via-lime-300 to-lime-100 py-6 h-full max-md:px-5 lg:px-[250px] px-[50px] md:px-[100px]"
       >
         <div className="font-serif t text-xl flex justify-start md:justify-center font-bold tracking-wide">
           CONTACT US

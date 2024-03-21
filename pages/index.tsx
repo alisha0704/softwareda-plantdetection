@@ -6,7 +6,6 @@ import { UserButton } from "@clerk/nextjs";
 const index = () => {
   return (
     <>
-      <Header />
       <Hero />
     </>
   );

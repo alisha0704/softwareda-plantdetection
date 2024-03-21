@@ -32,8 +32,7 @@ const Feedback: React.FC = () => {
 
   return (
     <>
-      <Header />
-      <div className="bg-slate-200">
+      <div className="bg-gradient-to-r from-lime-400 via-lime-300 to-lime-100 min-h-screen">
         <div className="max-w-3xl  mx-auto py-8 px-4  flex">
           <div className="w-full">
             <h1 className="text-2xl text-center font-serif font-bold mb-4">

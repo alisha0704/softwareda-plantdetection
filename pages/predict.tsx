@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 
 const ImageUpload = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -56,10 +57,17 @@ const ImageUpload = () => {
         {isLoading ? "Processing..." : "Upload Image"}
       </button>{" "}
       {inference && (
-        <div className="max-w-md p-4 bg-white rounded-md shadow-md">
+        <div className="text-lg w-4/5 pt-10">
           <ReactMarkdown>{inference}</ReactMarkdown>
         </div>
       )}
+      <div className="py-4">
+        <Link href="/">
+          <button className="px-7 py-3  text-white bg-green-500 hover:bg-green-400 rounded-xl text-lg">
+            Back to Home
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
