@@ -17,7 +17,7 @@ const ContactUs = () => {
   };
   return (
     <>
-    <Header></Header>
+      <Header></Header>
       <div
         id="contact"
         className="bg-slate-200 py-6 h-full max-md:px-5 lg:px-[250px] px-[50px] md:px-[100px]"
@@ -153,7 +153,6 @@ const ContactUs = () => {
                       <div className="text-black text-md font-arial font-bold block tracking-[0.56px] ">
                         Support
                       </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -176,7 +175,6 @@ const ContactUs = () => {
                       <div className="text-black text-md font-arial font-bold block tracking-[0.56px] ">
                         Collaboration
                       </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -199,7 +197,6 @@ const ContactUs = () => {
                       <div className="text-black text-md font-bold block tracking-[0.56px] ">
                         Assitance
                       </div>
-                      
                     </div>
                   </div>
                 </div>

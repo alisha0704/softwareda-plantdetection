@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
 
-
 const Header = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
 
@@ -60,7 +59,6 @@ const Header = () => {
         <UserButton />
       </header> */}
       </div>
-      
     </div>
   );
 };

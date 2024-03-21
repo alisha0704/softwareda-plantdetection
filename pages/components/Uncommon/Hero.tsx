@@ -9,15 +9,15 @@ const Hero = () => {
         <div className="container mx-auto flex flex-col items-center justify-center px-5 py-24 md:flex-row">
           <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left">
             <h1 className="title-font mb-4 text-5xl font-bold text-black">
-            From Leaf to Diagnosis: Insight for Healthy Plants.
+              From Leaf to Diagnosis: Insight for Healthy Plants.
             </h1>
             <p className="mb-8 text-2xl font-semibold leading-relaxed">
-            Harnessing AI to Identify Species and Defend Plant Health.
+              Harnessing AI to Identify Species and Defend Plant Health.
             </p>
-            <Link href="/test">
+            <Link href="/predict">
               <div className="container flex items-center justify-center">
                 <button className="inline-flex rounded-2xl border-0 bg-[#54BD95] hover:bg-green-300 px-10 py-3 text-2xl text-white focus:outline-none">
-                  Get Started 
+                  Get Started
                 </button>
               </div>
             </Link>
