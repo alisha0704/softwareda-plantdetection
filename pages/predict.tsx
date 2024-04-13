@@ -8,11 +8,17 @@ import Link from "next/link";
 const ImageUpload = () => {
   const [file, setFile] = useState<File | null>(null);
   const [inference, setInference] = useState<string>("");
+  const [imageUrl, setImageUrl] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const onFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files.length > 0) {
-      setFile(event.target.files[0]);
+      const selectedFile = event.target.files[0];
+      setFile(selectedFile);
+
+      // Show preview of the selected image
+      const url = URL.createObjectURL(selectedFile);
+      setImageUrl(url);
     }
   };
 
@@ -25,7 +31,7 @@ const ImageUpload = () => {
 
     try {
       const response = await axios.post(
-        " http://127.0.0.1:5000/analyze",
+        "http://127.0.0.1:5000/analyze",
         formData,
         {
           headers: {
@@ -44,6 +50,14 @@ const ImageUpload = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-lime-400 via-lime-300 to-lime-100">
       <h1 className="mb-4 text-4xl font-bold">Plant Disease Prediction</h1>
+      
+      {/* Show preview of the selected image */}
+      {imageUrl && (
+        <div className="mb-6">
+          <img src={imageUrl} alt="Selected" className="max-w-md border border-black rounded-md" />
+        </div>
+      )}
+
       <input
         type="file"
         onChange={onFileChange}
@@ -51,7 +65,7 @@ const ImageUpload = () => {
       />
       <button
         onClick={onFileUpload}
-        className=" px-7 py-3 text-white bg-green-500 hover:bg-green-400 rounded-xl text-lg"
+        className="px-7 py-3 text-white bg-green-500 hover:bg-green-400 rounded-xl text-lg"
         disabled={isLoading}
       >
         {isLoading ? "Processing..." : "Upload Image"}
@@ -63,7 +77,7 @@ const ImageUpload = () => {
       )}
       <div className="py-4">
         <Link href="feedback">
-          <button className="px-7 py-3  text-white bg-green-500 hover:bg-green-400 rounded-xl text-lg">
+          <button className="px-7 py-3 text-white bg-green-500 hover:bg-green-400 rounded-xl text-lg">
             Continue 
           </button>
         </Link>
